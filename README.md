@@ -97,7 +97,7 @@ python transcribe_with_gemini.py -i video.wav -o final_transcript.md
 | :--- | :--- | :--- |
 | `-i, --input` | Input audio file path | `video.wav` |
 | `-o, --output` | Output markdown transcript file | `final_transcript.md` |
-| `-m, --model` | Gemini model name | `gemini-2.5-flash-lite` |
+| `-m, --model` | Gemini model name | `gemini-3.5-flash-lite` |
 | `-c, --chunk-minutes`| Duration of each audio chunk in minutes | `10` |
 | `--keep-chunks` | Keep temporary WAV chunk files after completion | `False` (deleted) |
 | `--ffmpeg-path` | Custom path to FFmpeg binary/folder | `C:\ffmpeg\bin` / Auto |
@@ -110,7 +110,7 @@ Reads all chunk transcripts from `chunk_transcripts/` in chronological order and
 
 **Usage:**
 ```bash
-python summarize_transcripts.py -m gemini-2.5-flash-lite -o summary.md
+python summarize_transcripts.py -m gemini-3.5-flash-lite -o summary.md
 ```
 
 **Common Options:**
@@ -118,7 +118,7 @@ python summarize_transcripts.py -m gemini-2.5-flash-lite -o summary.md
 | :--- | :--- | :--- |
 | `-d, --directory` | Directory containing `.txt` transcript chunks | `chunk_transcripts` |
 | `-o, --output` | Output summary file name | `summary.txt` |
-| `-m, --model` | Gemini model name | `gemini-2.5-flash-lite` |
+| `-m, --model` | Gemini model name | `gemini-3.5-flash-lite` |
 
 ---
 
